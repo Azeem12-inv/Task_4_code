@@ -1,0 +1,26 @@
+import cv2
+image1=cv2.imread("img.jpg")
+image2=cv2.imread("img1.jpg")
+
+cv2.imshow("Image1",image1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+cv2.imshow("Image2",image2)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+img1=image1[200:400,200:450]
+image2[200:400,200:450]=img1
+cv2.imshow("Image",image2)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+image2=cv2.imread("img1.jpg")
+
+
+img2=image2[200:400,200:450]
+image1[200:400,200:450]=img2
+cv2.imshow("Image",image1)
+cv2.waitKey()
+cv2.destroyAllWindows()
