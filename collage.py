@@ -1,0 +1,13 @@
+import cv2
+Image1 = cv2.imread("img.jpg")
+Image2 = cv2.imread("img1.jpg")
+cv2.imshow("Image1",Image1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+cv2.imshow("Image2",Image2)
+cv2.waitKey()
+cv2.destroyAllWindows()
+Final_image=cv2.hconcat([Image1,Image2])
+cv2.imshow("Image1",Final_image)
+cv2.waitKey()
+cv2.destroyAllWindows()
